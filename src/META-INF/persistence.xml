@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="SimuladorSVPU" transaction-type="RESOURCE_LOCAL">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbTypeOfNotification</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbMonitoringHasSensor</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbAnomaly</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbAnomalyType</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbUnitOfMeasurement</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbPatientData</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbSensor</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbHealthProvider</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbPatient</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbNotification</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbPatientType</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbLocation</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbMonitoring</class>
+        <class>br.puc_rio.inf.les.med.main.dao.model.TbSensorType</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://139.82.24.122:5432/dev"/>
+            <property name="javax.persistence.jdbc.user" value="dev"/>
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="javax.persistence.jdbc.password" value="dev2017"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="validate"/>
+            <property name="format_sql" value="true"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>
